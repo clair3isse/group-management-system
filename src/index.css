@@ -1,0 +1,159 @@
+:root {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+/* Background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Headers */
+h1, h2 {
+  text-align: center;
+  color: #0e0b0df6;
+}
+
+/* Form styling */
+.employee_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(62, 224, 70, 0.15);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  color: rgb(7, 7, 7);
+}
+
+.input_field {
+  display: flex;
+  flex-direction: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input_field label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input_field input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #dee698;
+  font-size: 16px;
+}
+
+/* Button */
+.submit_btn {
+  background-color: rgb(50, 129, 202);
+  border: none;
+  padding: 12px 24px;
+  margin-top: 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit_btn:hover {
+  background-color: white;
+  color: coral;
+  border: 1px solid coral;
+}
+
+/* Employee list */
+.employee-list-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.employee-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.employee-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #c082dd;
+  padding: 15px;
+  border-radius: 12px;
+  color: #333;
+}
+
+.profile-picture {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #6e7aff;
+}
+
+.employee-info p {
+  margin: 5px 0;
+}
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffd700;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #ff4c4c;
+  color: white;
+}
